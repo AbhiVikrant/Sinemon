@@ -1,10 +1,12 @@
 import "./App.css";
+import StopwatchCounter from "./component/StopwatchCounter";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Stopwatch</h1>
+      <div className="App">
+        <h1 className="header">Stopwatch</h1>
+        <StopwatchCounter />
       </div>
     </>
   );
