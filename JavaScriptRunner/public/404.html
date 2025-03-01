@@ -1,0 +1,13 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const pathSegments = window.location.pathname.split("/");
+      const projectPath = "/Sinemon/JavaScriptRunner/";
+      sessionStorage.redirect = projectPath + pathSegments.slice(2).join("/");
+      window.location.replace(projectPath);
+    </script>
+  </head>
+  <body></body>
+</html>
