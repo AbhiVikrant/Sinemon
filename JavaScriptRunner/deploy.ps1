@@ -22,4 +22,7 @@ npm run deploy
 Remove-Item -Recurse -Force build
 
 Write-Host "✅ Success! Your app is deployed at:"
-Write-Host "https://github.com/AbhiVikrant/Sinemon/Javascriptrunner"
+Write-Host "https://github.com/AbhiVikrant/Sinemon/tree/new_dora/JavaScriptRunner"
+# Add this after building
+$indexPath = "dist/index.html"
+(Get-Content $indexPath) -replace '"/', '"%PUBLIC_URL%/' | Set-Content $indexPath
